@@ -18,7 +18,7 @@ public class SecurityConfig {
     public UserDetailsService userDetailsService() {
 
 
-        UserDetails userDetails = User.builder().username("mithil").password(passwordEncoder().encode("sobokid")).roles("ADMIN").build();
+        UserDetails userDetails = User.builder().username("mithil").password(passwordEncoder().encode("test123")).roles("ADMIN").build();
         UserDetails userDetails1 = User.builder().username("sarthak").password(passwordEncoder().encode("wimp")).roles("ADMIN").build();
         UserDetails userDetails2 = User.builder().username("ONS").password(passwordEncoder().encode("training")).roles("USER").build();
 

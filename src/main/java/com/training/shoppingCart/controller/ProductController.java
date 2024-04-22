@@ -17,6 +17,7 @@ import java.util.Locale;
 
 @RestController
 @RequestMapping("/product/api")
+@CrossOrigin(origins = "http://localhost:3000")
 public class ProductController {
     @Autowired
     private  ProductService productService;
